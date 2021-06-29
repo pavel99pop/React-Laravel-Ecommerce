@@ -5,18 +5,21 @@ import Login from "./components/Login";
 import AddProduct from "./components/AddProduct";
 import UpdateProduct from "./components/UpdateProduct";
 import Register from "./components/Register";
+import Protected from "./components/Protected";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
-        <h1>SH Fashion</h1>
+        {/* <Header /> */}
+        {/* <h1>SH Fashion</h1> */}
         <Route path="/add">
-          <AddProduct />
+          {/* <AddProduct /> */}
+          <Protected Cmp={AddProduct} />
         </Route>
         <Route path="/update">
-          <UpdateProduct />
+          {/* <UpdateProduct /> */}
+          <Protected Cmp={UpdateProduct} />
         </Route>
         <Route path="/login">
           <Login />

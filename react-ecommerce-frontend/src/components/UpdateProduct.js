@@ -1,8 +1,13 @@
+import Header from "./Header";
+
 const UpdateProduct = () => {
   return (
-    <div>
-      <h1>Update Product</h1>
-    </div>
+    <>
+      <Header />
+      <div>
+        <h1>Update Product</h1>
+      </div>
+    </>
   );
 };
 
